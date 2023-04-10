@@ -1,20 +1,20 @@
-# get two integer parameters
+# get two float parameters
 # return sum
-def plus(x, y):
-    return x+y
+def plus(x: float, y: float) -> float:
+    return x + y
 
 # main function
 def main():
     check = 1
-    print("Welcome to calcuator")
+    print("Welcome to calculator")
     while check >= 1:        
         print("0: exit, 1: plus")
         check = int(input())
         if check == 1:
             print("First Number")
-            x = int(input())
+            x = float(input())
             print("Second Number")
-            y = int(input())
+            y = float(input())
             print("answer : ", plus(x,y))
         elif check > 1:
             print("Unsupported")
